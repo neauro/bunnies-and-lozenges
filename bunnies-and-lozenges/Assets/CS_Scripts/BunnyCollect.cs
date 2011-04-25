@@ -25,7 +25,7 @@ public class BunnyCollect : MonoBehaviour {
 			if (numBunniesCaught == 1)
 				guiText.text = "you caught a bunny!  go get more!";
 			else if (numBunniesCaught > 1)
-				guiText.text = "you caught bunniesCaught bunnies!";
+				guiText.text = "you caught " + numBunniesCaught + " bunnies!";
 		}
 	}
 }

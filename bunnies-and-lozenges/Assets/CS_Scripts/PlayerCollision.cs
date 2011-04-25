@@ -1,3 +1,6 @@
+// handles collision interaction between player
+// and objects in environment
+
 using UnityEngine;
 using System.Collections;
 

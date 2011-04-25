@@ -1,7 +1,8 @@
+// handles AI for bunny movement
+
 using UnityEngine;
 using System.Collections;
 
-// handles AI for bunny movement
 public class BunnyMovement : MonoBehaviour {
 	// states of bunny movement
 	bool isWandering;
