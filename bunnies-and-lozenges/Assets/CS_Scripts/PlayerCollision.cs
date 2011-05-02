@@ -19,12 +19,16 @@ public class PlayerCollision : MonoBehaviour {
 				Wait();
 				Application.LoadLevel("HighScore");
 			}
+			
+		}else if (collisionInfo.gameObject.tag == "lozenge"){
+			LozengeDefeat.numLozengesDefeated++;
+			Destroy(collisionInfo.gameObject);
 		}
 	}
 	
 	// function for waiting
 	// waits 2 seconds
 	IEnumerator Wait() {
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(2f);
 	}
 }

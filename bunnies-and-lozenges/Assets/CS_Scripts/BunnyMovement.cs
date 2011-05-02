@@ -22,9 +22,11 @@ public class BunnyMovement : MonoBehaviour {
 			transform.Rotate(0.0f,bunnySpin,0.0f);
 			//transform.Translate(0.0f,0.0f,bunnySpeed);
 		} else if (isFleeing) {
-			transform.Translate(0.0f,0.0f,bunnySpeed);
+			transform.Rotate(0.0f,bunnySpin,0.0f);
+			//transform.Translate(0.0f,0.0f,bunnySpeed);
 		} else if (isResting) {
-			transform.Translate(0,0,0);
+			transform.Rotate(0.0f,bunnySpin,0.0f);
+			//transform.Translate(0,0,0);
 		}
 	}
 }
