@@ -13,17 +13,21 @@ public class PlayerCollision : MonoBehaviour {
 			BunnyCollect.numBunniesCaught++;
 			Destroy(collisionInfo.gameObject);
 			
-			if(BunnyCollect.numBunniesCaught == BunnyCollect.numGoalBunnies){
+			// todo: make it so that player only has to catch numGoalBunnies amount of bunnies
+			//		 instead of all bunnies
+			if(BunnyCollect.numBunniesCaught == BunnyCollect.numBunniesTotal){
 				WinText.textOn = true;
-				WinText.message = "you got all 5 bunnies!  you win!";
+				WinText.message = "you got all bunnies!  you win!";
 				Wait();
 				Application.LoadLevel("HighScore");
 			}
 			
-		}else if (collisionInfo.gameObject.tag == "lozenge"){
+		} else if (collisionInfo.gameObject.tag == "lozenge") {
 			LozengeDefeat.numLozengesDefeated++;
 			Destroy(collisionInfo.gameObject);
 		}
+		
+		
 	}
 	
 	// function for waiting

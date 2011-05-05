@@ -1,3 +1,5 @@
+// handles showing high score information (text for score)
+
 using UnityEngine;
 using System.Collections;
 

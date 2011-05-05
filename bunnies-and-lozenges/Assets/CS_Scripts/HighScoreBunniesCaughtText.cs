@@ -1,3 +1,5 @@
+// handles showing the number of bunnies caught in the GUI
+
 using UnityEngine;
 using System.Collections;
 

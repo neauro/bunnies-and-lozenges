@@ -1,3 +1,5 @@
+// handles showing high score information (time elapsed during play)
+
 using UnityEngine;
 using System.Collections;
 

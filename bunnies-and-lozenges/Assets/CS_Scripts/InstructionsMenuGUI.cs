@@ -1,3 +1,5 @@
+// handles showing instruction information in the GUI
+
 using UnityEngine;
 using System.Collections;
 

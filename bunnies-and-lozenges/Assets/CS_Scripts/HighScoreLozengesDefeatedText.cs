@@ -1,3 +1,5 @@
+// handles showing the number of lozenges defeated in the high score
+
 using UnityEngine;
 using System.Collections;
 

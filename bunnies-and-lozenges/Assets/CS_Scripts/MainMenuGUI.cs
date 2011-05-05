@@ -1,3 +1,5 @@
+// handles showing main menu GUI
+
 using UnityEngine;
 using System.Collections;
 

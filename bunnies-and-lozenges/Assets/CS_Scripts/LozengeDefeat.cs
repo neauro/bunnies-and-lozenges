@@ -1,3 +1,5 @@
+// handles showing how many lozenges are defeated in the GUI
+
 using UnityEngine;
 using System.Collections;
 

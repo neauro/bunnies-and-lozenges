@@ -1,3 +1,5 @@
+// handles showing time elapsed during play
+
 using UnityEngine;
 using System.Collections;
 
@@ -11,7 +13,7 @@ public class TimerGUI : MonoBehaviour {
 	
 	void Update() {
 		if (!BunnyCollect.allBunniesCaught) {
-			timeElapsed = (int)Time.time;
+			timeElapsed = (int) Time.time;
 			guiText.text = "Time elapsed: " + timeFormat(timeElapsed) + " seconds";
 		}
 	}
