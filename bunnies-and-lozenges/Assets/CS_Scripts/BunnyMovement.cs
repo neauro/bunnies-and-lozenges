@@ -42,12 +42,13 @@ public class BunnyMovement : MonoBehaviour {
 			// set time bunny started fleeing
 			fleeStartTime = Time.time;
 			enCurrentMove = enMoveStates.fleeing;
+			animation.Play("flee");
 		}
 		
 		// make bunny move depending on its state
 		switch (enCurrentMove) {
 			case enMoveStates.wandering: {
-				animation.Play();
+				animation.Play("idle");
 				break;
 			}
 		
@@ -56,6 +57,7 @@ public class BunnyMovement : MonoBehaviour {
 				if (Time.time - fleeStartTime >= 5) {
 					enCurrentMove = enMoveStates.resting;
 					restStartTime = Time.time;
+					animation.Play("idle");
 				} else {
 					// make sure bunny stays on the ground while it's fleeing
 					float height = Terrain.activeTerrain.SampleHeight(transform.position)
