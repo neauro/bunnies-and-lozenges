@@ -14,7 +14,8 @@ public class PlayerCollision : MonoBehaviour {
 			Destroy(collisionInfo.gameObject);
 			
 			// todo: make it so that player only has to catch numGoalBunnies amount of bunnies
-			//		 instead of all bunnies
+			//		 instead of all bunnies, but can continue catching more bunnies
+			//if(BunnyCollect.numBunniesCaught == BunnyCollect.numGoalBunnies){
 			if(BunnyCollect.numBunniesCaught == BunnyCollect.numBunniesTotal){
 				WinText.textOn = true;
 				WinText.message = "you got all bunnies!  you win!";

@@ -20,7 +20,7 @@ public class BunnyCollect : MonoBehaviour {
 		
 		// todo: get a better measurement for number of bunnies to catch
 		numGoalBunnies = (int) numBunniesTotal / 2; // find at least half the bunnies
-		//Debug.Log("total number of bunnies to catch: " + numGoalBunnies);
+		//Debug.Log("total number of goal bunnies to catch: " + numGoalBunnies);
 	}
 	
 	void Update () {
